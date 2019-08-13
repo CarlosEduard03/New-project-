@@ -4,16 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+    <script src="components/loader.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/a.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href=9"css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 <div class="container">
+  <div class="box">
+    <h1> CALCULADORA DE TBM   </h1>
    <div class="row">
 	<div class="col-xs-12">
       <label for="">Idade: </label><br>
@@ -34,17 +38,32 @@
 </div>
 <br>
    <div class="row">
-	   <div class="col-xs-10">
+	   <div class="col-xs-12">
       <select name="radio" id="radio">
-         <option value="">Escolha </option>
+         <option value="">Taxa de atividade</option>
         <option value="1.2">Sedentário(Pouco ou nenhum exercício)</option>
         <option value="1.375">Levemente ativo(Exercicio leve 1 a 3 dias por semana) </option>
            <option value="1.55">Moderadamente ativo(Exercicio moderado, faz esporte 3 a 5 dias por semana)  </option>
             <option value="1.725">Altamente ativo(Exercicio pesado de 5 a 6 dias por semana)   </option>
              <option value="1.9"> Extremidade ativo(Exercicio pesado diariamente e até 2 vezes por dia)       </option>
+             </select>
   </div> 
 </div>
+<br>
+<div class="row">
+<div class="col-xs-6">
+    <div class="form-group">
+      <button class="btn btn-primary btn-block" id="homem">TMB Masculino </button>
+    </div>
+  </div>
+  <div class="col-xs-6">
+    <div class="form-group">
+      <button class="btn btn-primary btn-block" id="feminino"> TMB Feminino </button>
+    </div>
+  </div>
+   </div>
 
+</div>
 </div>
 
 

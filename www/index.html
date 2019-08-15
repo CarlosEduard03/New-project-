@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
 
     <script src="components/loader.js"></script>
-  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/jquery-3.4.1.mi.js"></script>
   <script src="components/a.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
@@ -21,7 +21,7 @@
    <div class="row">
 	<div class="col-xs-12">
       <label for="">Idade: </label><br>
-      <input type="number" class="form-control" id="idade" placeholder="Digite a idade">
+      <input type="number"  class="form-control" id="idade" placeholder="Digite a idade">
   </div>
 </div>
   <div class="row">
@@ -33,46 +33,51 @@
     <div class="row">
 	   <div class="col-xs-12">
       <label for="">Digite seu peso: </label><br>
-      <input type="number" class="form-control" id="peso" placeholder="Digite o peso em kg" >
+      <input type="number"  class="form-control" id="peso" placeholder="Digite o peso em kg" >
   </div>
 </div>
 <br>
    <div class="row">
 	   <div class="col-xs-12">
-      <select name="radio" id="radio">
+      <select name="radio" id="nivelAtividade">
          <option value="">Taxa de atividade</option>
-        <option value="1.2">Sedentário(Pouco ou nenhum exercício)</option>
+        <option value="1.2" >Sedentário(Pouco ou nenhum exercício)</option>
         <option value="1.375">Levemente ativo(Exercicio leve 1 a 3 dias por semana) </option>
            <option value="1.55">Moderadamente ativo(Exercicio moderado, faz esporte 3 a 5 dias por semana)  </option>
             <option value="1.725">Altamente ativo(Exercicio pesado de 5 a 6 dias por semana)   </option>
-             <option value="1.9"> Extremidade ativo(Exercicio pesado diariamente e até 2 vezes por dia)       </option>
+             <option value="1.9"> Extremidade ativo(Exercicio pesado diariamente e até 2 vezes por dia)</option>
              </select>
   </div> 
 </div>
 <br>
 <div class="row">
-<div class="col-xs-6">
-    <div class="form-group">
-      <button class="btn btn-primary btn-block" id="homem">TMB Masculino </button>
-    </div>
-  </div>
-  <div class="col-xs-6">
-    <div class="form-group">
-      <button class="btn btn-primary btn-block" id="feminino"> TMB Feminino </button>
-    </div>
-  </div>
-   </div>
+   <div class="col-xs-12">
+     <label>Sexo: </label>
+     </div>
+     </div>
+<div class="row">
+	   <div class="col-xs-12">
+      <select class="form-control" id="sexo">
+         <option value="masculino">Masculino</option>
+        <option value="feminino" >Feminino </option>
+             </select>
+  </div> 
+</div>
+   <br>
   <div class="row">
 <div class="col-xs-12">
     <div class="form-group">
-      <button class="btn btn-primary btn-block" id="apagar">Limpar</button>
+      <button class="btn btn-primary btn-block" id="calcular" onclick="calcular()" >Calcular</button>
     </div>
   </div>
    </div>
+   <div class="row">
+	   <div class="col-xs-12">
+      <label for="">Resultado:  </label><br>
+      <input type="" class="form-control" id="visor">
+  </div>
 </div>
 </div>
-
-
-
+</div>
 </body>
 </html>
